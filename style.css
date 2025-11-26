@@ -78,6 +78,7 @@ nav a:hover {
   cursor: pointer;
 }
 
+
 .hero-img {
   flex: 1;
   height: 300px;
@@ -107,11 +108,16 @@ nav a:hover {
 
 .feature-box:hover {
   transform: translateY(-5px);
+    transition: 0.3s;
 }
 
 /* GALLERY */
 .gallery {
   padding: 60px 10%;
+}
+img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .gallery-grid {
@@ -194,3 +200,30 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+body {
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgba(123, 91, 255, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(0, 200, 255, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 50% 80%,
+      rgba(255, 100, 200, 0.25),
+      transparent 70%
+    ),
+    #0d1117;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  color: #fff;
+  line-height: 1.6;
+}
+
+
+
+
